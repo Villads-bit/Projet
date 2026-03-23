@@ -1,0 +1,63 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+/*list styling*/
+li a {
+  display: block;
+  color: black;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+.layout {
+  display: flex;
+  height: 100vh; /* fylder hele skærmen */
+}
+
+.moveside {
+  width: 250px;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.con {
+  flex: 1;              /* fylder resten */
+  border: none;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wiki</title>
+    <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+<div class="layout">
+  <div class="moveside">
+    <h2>Wiki</h2>
+    <ul>
+      <li>Controls</li>
+      <li>Mobs</li>
+      <li>Levels</li>
+      <li>Player</li>
+      <li>How to beat the game</li>
+    </ul>
+  </div>
+
+  <iframe
+    class="con"
+    src="How.html">
+  </iframe>
+</div>
+
+</ul>
+</body>
+</html>

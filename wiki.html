@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <header class="game-header">
+        <div class="logo">GAME NAME</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Gamepage.html">The Game</a></li>
+                <li><a href="wiki.html" class="active">WIKI</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+        <button class="btn-quit">
+            <a href="https://www.google.com/" style="color: white; text-decoration: none;">EXIT</a>
+        </button>
+    </header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="wiki.css">
+    <title>Game Wiki</title>
+</head>
+<body>
+<div class="layout">
+    <div class="sidebar">
+        <h2>Wiki Categories</h2>
+        <button onclick="loadPage('controls.html')">Controls</button>
+        <button onclick="loadPage('mobs.html')">Mobs</button>
+        <button onclick="loadPage('levels.html')">Levels</button>
+        <button onclick="loadPage('Gamepage.html')">Player</button>
+        <button onclick="loadPage('how.html')">How to beat the game</button>
+    </div>
+
+    <iframe 
+        id="wikiFrame" 
+        class="content" 
+        src="" 
+        title="Wiki Content">
+    </iframe>
+</div>
+
+<script>
+    function loadPage(pageUrl) {
+        const frame = document.getElementById('wikiFrame');
+        frame.src = pageUrl;
+    }
+</script>
